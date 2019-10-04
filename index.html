@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Keyboard Input for chat-bubble</title>
+	<title>The Great SnackBar</title>
 
 	<!-- for mobile screens -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +87,7 @@ var chatWindow = new Bubbles(document.getElementById("chat"), "chatWindow", {
 // "Basic chat-bubble Example" (1-basics.html)
 var convo = {
   ice: {
-    says: ["Welcome to The Great SnackBar Initiative", "Are you an inducted member?"],
+    says: ["Welcome to The Great SnackBar Initiative!", "Are you an inducted member?"],
     reply: [
       {
         question: "Yes",
@@ -103,13 +103,13 @@ var convo = {
     says: ["May I suggest a snack, patron?"],
     reply: [
       {
-        question: "Start Over",
+        question: "Please check the sheet" + "https://tompeter.github.io/snackbar/",
         answer: "ice"
       }
     ]
   },
   "no": {
-    says: ["Are you ashamed?"],
+    says: ["Aren't you ashamed? 🤦"],
     reply: [
       {
         question: "Yes",
@@ -131,6 +131,15 @@ var convo = {
       {
         question: "Yes, ofcourse",
         answer: "contact"
+      }
+    ]
+  },
+  "contact": {
+    says: ["Please contact your nearest member for immediate induction", "Thank you! 🙏🏼 "],
+    reply: [
+      {
+        question: "Start Over",
+        answer: "ice"
       }
     ]
   }
