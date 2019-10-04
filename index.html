@@ -100,12 +100,16 @@ var convo = {
     ]
   },
   yes: {
-    says: ["May I suggest a snack, patron?"],
+    says: ["Would you like to know what's on the menu today?"],
     reply: [
       {
-        question: "Please check the sheet" + "https://tompeter.github.io/snackbar/",
-        answer: "ice"
-      }
+        question: "Yeah, Sure. 🤤",
+        answer: "food-list"
+      }, 
+      {
+        question: "No",
+        answer: "maybe-another-time"
+      }	    
     ]
   },
   "no": {
@@ -139,6 +143,24 @@ var convo = {
     reply: [
       {
         question: "Start Over",
+        answer: "ice"
+      }
+    ]
+  },
+   "maybe-another-time": {
+    says: ["Maybe another time", "Thank you! 🙏🏼 "],
+    reply: [
+      {
+        question: "Start Over",
+        answer: "ice"
+      }
+    ]
+  },
+   "food-list": {
+    says: ["We have got, Cookies 🍪, Maggi 🍝, Tropical Drinks 🍹, Raggi Baked Crackers 🍘, Wholewheat fresh garlic herbed rusk 🍞"],
+    reply: [
+      {
+        question: "Thank you! 🙏🏼",
         answer: "ice"
       }
     ]
